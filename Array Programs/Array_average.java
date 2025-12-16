@@ -6,18 +6,19 @@ public class Array_average {
   {
     Scanner scan = new Scanner(System.in);
 
-    System.out.println("----Enter Array Elements----\n");
+    System.out.print("Enter Array Elements : ");
     int size = scan.nextInt();
     int[] arr = new int[size];
     int sum = 0;
     System.out.print("\n-----Enter Array Elements-----\n");
-    for(int i=0;i<arr.lenth;i++)
+    for(int i=0;i<size;i++)
     {
       System.out.printf("\n %d Element : ",i + 1);
       arr[i] = scan.nextInt();
       sum += arr[i];
     }
-
-    System.out.print
+    int avg = sum/size;
+    System.out.printf("\n %d Is youre Sum....",sum);
+    System.out.printf("\n %d Is youre Average....",avg);
   }  
 }
